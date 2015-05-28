@@ -4,9 +4,8 @@
   "description": "prefix a css attribute",
   "dependencies": {},
   "devDependencies": {
-    "serve": "jkroso/serve#1.5.1",
-    "assert": "component/assert",
-    "mocha": "*"
+    "mocha": "^2.2.5",
+    "serve": "jkroso/serve#1.5.1"
   },
   "repository": "git://github.com/jkroso/prefix.git",
   "bugs": "https://github.com/jkroso/prefix/issues",

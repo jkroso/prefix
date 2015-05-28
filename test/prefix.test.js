@@ -1,5 +1,5 @@
 
-var assert = require('assert/index')
+var assert = require('assert')
 var prefix = require('..')
 var dash = prefix.dash
 
