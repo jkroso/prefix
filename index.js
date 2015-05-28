@@ -68,7 +68,7 @@ function dashedPrefix(key){
   key = prefix(key)
   if (upper.test(key)) {
     key = '-' + key.replace(upper, '-$1')
-    upper.lastIndex = 0;
+    upper.lastIndex = 0 // fix #1
   }
   return key.toLowerCase()
 }
