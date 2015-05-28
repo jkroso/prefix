@@ -1,5 +1,5 @@
 
-var assert = require('assert/index')
+var assert = require('assert')
 var prefix = require('..')
 var dash = prefix.dash
 
@@ -31,14 +31,23 @@ describe('prefix', function(){
 })
 
 describe('dash', function(){
-  it('should create a dasherized string', function(){
-    assert(dash('transform') in {
+  var transformPossibilites = {
       '-webkit-transform': null,
       '-moz-transform': null,
       '-ms-transform': null,
       '-o-transform': null,
       'transform': null
-    })
+  }
+
+  it('should create a dasherized string', function(){
+    assert(dash('transform') in transformPossibilites)
+  })
+
+  it('should work if invoked many times', function(){
+      assert(dash('transform') in transformPossibilites)
+      assert(dash('transform') in transformPossibilites)
+      assert(dash('transform') in transformPossibilites)
+      assert(dash('transform') in transformPossibilites)
   })
 })
 
