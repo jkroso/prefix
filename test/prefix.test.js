@@ -49,7 +49,7 @@ describe('dash', function(){
 })
 
 function possibilities(key){
-  return 'Moz O ms webkit'.split(' ').map(function(pre){
+  return 'Moz O ms Webkit'.split(' ').map(function(pre){
     return pre + capitalize(key)
   }).concat(key).reduce(function(o, k){
     o[k] = true

@@ -1,6 +1,6 @@
 
 var style = document.createElement('p').style
-var prefixes = 'O ms Moz webkit'.split(' ')
+var prefixes = 'O ms Moz Webkit'.split(' ')
 var upper = /([A-Z])/g
 
 var memo = {}
@@ -25,7 +25,7 @@ exports.dash = dashedPrefix
 /**
  * prefix `key`
  *
- *   prefix('transform') // => webkitTransform
+ *   prefix('transform') // => WebkitTransform
  *
  * @param {String} key
  * @return {String}
