@@ -1,10 +1,7 @@
-
 serve: node_modules
-	@node_modules/serve/bin/serve -Slojp 0
+	@$</serve/bin/serve -Slojp 0
 
-node_modules: *.json
-	@packin install \
-		--meta package.json,component.json \
-		--folder node_modules
+node_modules: package.json
+	@npm install
 
 .PHONY: serve

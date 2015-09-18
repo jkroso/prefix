@@ -1,13 +1,12 @@
-
 # prefix
 
-  add a vendor prefix to a css attribute
+add a vendor prefix to a css attribute
 
 ## Installation
 
-_With [packin](//github.com/jkroso/packin) or [component](//github.com/component/component)_
-
-    $ packin add jkroso/prefix
+```sh
+npm install prefix
+```
 
 then in your app:
 
