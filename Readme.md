@@ -22,7 +22,7 @@ var prefix = require('prefix')
   Prefix `key`. This function memoizes its results so you don't need to worry about any performance issues, just treat it like a map.
 
 ```js
-prefix('transform') // => webkitTransform
+prefix('transform') // => WebkitTransform
 prefix('color') // => color
 ```
 
