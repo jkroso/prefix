@@ -1,6 +1,6 @@
 {
   "name": "prefix",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "prefix a css attribute",
   "dependencies": {},
   "devDependencies": {
@@ -8,7 +8,6 @@
     "serve": "jkroso/serve#1.5.1"
   },
   "repository": "git://github.com/jkroso/prefix.git",
-  "bugs": "https://github.com/jkroso/prefix/issues",
   "keywords": ["prefix"],
   "author": "Jake Rosoman",
   "license": "MIT",
