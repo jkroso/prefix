@@ -8,6 +8,8 @@
     "serve": "jkroso/serve#1.5.1"
   },
   "repository": "git://github.com/jkroso/prefix.git",
+  "main": "index.js",
+  "browser": "browser.js",
   "keywords": ["prefix"],
   "author": "Jake Rosoman",
   "license": "MIT",
