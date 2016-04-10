@@ -1,17 +1,20 @@
 {
   "name": "prefix",
   "version": "0.2.4",
-  "description": "prefix a css attribute",
+  "description": "Prefix CSS attributes",
   "dependencies": {},
   "devDependencies": {
-    "mocha": "^2.2.5",
+    "mocha": "^2.4.5",
     "serve": "jkroso/serve#1.5.1"
   },
   "repository": "git://github.com/jkroso/prefix.git",
   "main": "index.js",
-  "browser": "browser.js",
-  "keywords": ["prefix"],
+  "scripts": {
+    "test": "mocha test/**/*.spec.js"
+  },
+  "keywords": [
+    "prefix"
+  ],
   "author": "Jake Rosoman",
-  "license": "MIT",
-  "files": ["index.js"]
+  "license": "MIT"
 }

@@ -1,6 +1,5 @@
 var assert = require('assert')
 var prefix = require('..')
-var dash = prefix.dash
 
 describe('prefix', function(){
   it ('should not prefix things which don\'t need prefixes', function(){
@@ -23,7 +22,7 @@ describe('prefix', function(){
   })
 
   it ('should throw if it can\'t find a correct key', function(){
-    try { prefix('something fucked up') }
+    try { prefix('some invalid key') }
     catch (e) { return }
     throw new Error('should not get here')
   })
@@ -39,12 +38,12 @@ describe('dash', function(){
   }
 
   it('should create a dasherized string', function(){
-    assert(dash('transform') in transformPossibilites)
+    assert(prefix.dash('transform') in transformPossibilites)
   })
 
   it('should work if invoked many times', function(){
-    assert(dash('transform') in transformPossibilites)
-    assert(dash('transform') == dash('transform'))
+    assert(prefix.dash('transform') in transformPossibilites)
+    assert(prefix.dash('transform') == prefix.dash('transform'))
   })
 })
 

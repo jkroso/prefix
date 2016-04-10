@@ -1,7 +1,7 @@
 {
   "name": "prefix",
   "repo": "jkroso/prefix",
-  "description": "get prefixed styles properties",
+  "description": "Prefix CSS attributes",
   "keywords": ["dom", "css", "prefix"],
   "dependencies": {},
   "license": "MIT",

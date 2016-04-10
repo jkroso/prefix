@@ -1,6 +1,6 @@
 # prefix
 
-add a vendor prefix to a css attribute
+Add vendor prefixes to a CSS attribute.
 
 ## Installation
 
@@ -8,7 +8,7 @@ add a vendor prefix to a css attribute
 npm install prefix
 ```
 
-then in your app:
+Then in your app:
 
 ```js
 var prefix = require('prefix')
