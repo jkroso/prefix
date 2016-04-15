@@ -1,6 +1,6 @@
 {
   "name": "prefix",
-  "version": "0.2.4",
+  "version": "0.2.6",
   "description": "prefix a css attribute",
   "dependencies": {},
   "devDependencies": {
