@@ -9,7 +9,6 @@
   },
   "repository": "git://github.com/jkroso/prefix.git",
   "main": "index.js",
-  "browser": "index.js",
   "keywords": [
     "prefix"
   ],

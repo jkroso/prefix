@@ -1,4 +1,11 @@
-var style = document ? document.createElement('p').style : {}
+var style = null
+try {
+  style = document.createElement('p').style
+} catch {
+  // Handle headless mode
+  style = {}
+}
+
 var prefixes = ['O', 'ms', 'Moz', 'Webkit']
 var upper = /([A-Z])/g
 var memo = {}
@@ -61,7 +68,5 @@ function prefixDashed(key){
   return key.toLowerCase()
 }
 
-if (typeof module !== 'undefined' && module.exports){
-  module.exports = prefixMemozied
-  module.exports.dash = prefixDashed
-}
+module.exports = prefixMemozied
+module.exports.dash = prefixDashed
