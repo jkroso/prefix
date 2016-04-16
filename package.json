@@ -5,10 +5,11 @@
   "dependencies": {},
   "devDependencies": {
     "mocha": "^2.4.5",
-    "serve": "jkroso/serve#1.6.7"
+    "serve": "jkroso/serve#1.6.6"
   },
   "repository": "git://github.com/jkroso/prefix.git",
   "main": "index.js",
+  "browser": "index.js",
   "keywords": [
     "prefix"
   ],

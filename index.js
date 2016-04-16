@@ -1,4 +1,4 @@
-var style = document.createElement('p').style
+var style = document ? document.createElement('p').style : {}
 var prefixes = ['O', 'ms', 'Moz', 'Webkit']
 var upper = /([A-Z])/g
 var memo = {}
@@ -29,7 +29,7 @@ function prefix(key){
     if (style[name] !== undefined) return name
   }
 
-  throw new Error('Unable to prefix ' + key)
+  return key
 }
 
 /**
