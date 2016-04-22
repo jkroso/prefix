@@ -21,10 +21,8 @@ describe('prefix', function(){
     assert(prefix('transform') in possibilities('transform'))
   })
 
-  it ('should throw if it can\'t find a correct key', function(){
-    try { prefix('some invalid key') }
-    catch (e) { return }
-    throw new Error('should not get here')
+  it ('should return key as is if it can\'t find a correct key', function(){
+    assert(prefix('some invalid key') == 'some invalid key')
   })
 })
 
