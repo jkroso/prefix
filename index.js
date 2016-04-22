@@ -1,10 +1,7 @@
-var style = null
-try {
-  style = document.createElement('p').style
-} catch {
-  // Handle headless mode
-  style = {}
-}
+var style =
+  typeof document !== 'undefined' ?
+    document.createElement('p').style :
+    {}
 
 var prefixes = ['O', 'ms', 'Moz', 'Webkit']
 var upper = /([A-Z])/g
