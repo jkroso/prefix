@@ -1,7 +1,7 @@
-var style =
-  typeof document !== 'undefined' ?
-    document.createElement('p').style :
-    {}
+// check document first so it doesn't error in node.js
+var style = typeof document != 'undefined'
+  ? document.createElement('p').style
+  : {}
 
 var prefixes = ['O', 'ms', 'Moz', 'Webkit']
 var upper = /([A-Z])/g
